@@ -7,7 +7,11 @@ import Root from 'Root';
 let wrapped;
 
 beforeEach(() => {
-
+    wrapped = mount(
+        <Root>
+            <CommentList />
+        </Root>
+    );
 })
 
 it('creates one <li> per comment', () => {
